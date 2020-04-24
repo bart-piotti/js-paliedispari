@@ -5,15 +5,8 @@ function isPalindrome(phrase) {
     var phrase_into_array = phrase.split('');
     //Inverte l'ordine dell'array e lo converte in una stringa
     var reverse_phrase = phrase_into_array.reverse().join('');
-
     //Stabilisce se la stringa invertita è uguale a quella iniziale
-    if (reverse_phrase.toUpperCase() == phrase.toUpperCase()) {
-        var palindrome = true;
-    }
-    else {
-        palindrome = false;
-    }
-    return palindrome;
+    return reverse_phrase.toUpperCase() == phrase.toUpperCase()
 }
 
 //Chiede all'utente la frase da analizzare
